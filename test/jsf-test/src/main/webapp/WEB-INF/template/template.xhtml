@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title><ui:insert name="title">Default title</ui:insert></title>
+	<!-- <h:outputStylesheet library="blitzer" name="jquery-ui-1.10.3.custom.min.css" /> -->
+</h:head>
+
+<body>
+	<ui:debug hotkey="x"
+		rendered="#{initParam['javax.faces.FACELETS_DEVELOPMENT']}" />
+	<p:layout fullPage="true" id="layout">
+		<p:layoutUnit position="north" size="100">
+			<ui:insert name="header">
+				<ui:include src="header.xhtml" />
+			</ui:insert>
+		</p:layoutUnit>
+		<p:layoutUnit position="west" resizable="true" size="100" minSize="40"
+			maxSize="200">
+			<ui:insert name="west">
+				<ui:include src="west.xhtml" />
+			</ui:insert>
+		</p:layoutUnit>
+		<p:layoutUnit position="center">
+			<ui:insert name="content" />
+		</p:layoutUnit>
+		<p:layoutUnit position="south">
+			<ui:insert name="footer">
+				<ui:include src="footer.xhtml" />
+			</ui:insert>
+		</p:layoutUnit>
+	</p:layout>
+</body>
+
+</html>

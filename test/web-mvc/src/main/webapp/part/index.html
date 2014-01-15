@@ -1,0 +1,11 @@
+<h1>My App</h1>
+<div>
+	<ol>
+		<li ng-repeat="person in persons">
+			{{person.name}} == {{person.address.street}} == <a href="" ng-click="deletePerson(person.id)">Delete</a>
+		</li>
+	</ol>
+</div>
+<div>
+	<a href="#/new">New Person</a>
+</div>

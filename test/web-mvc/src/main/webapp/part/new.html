@@ -1,0 +1,24 @@
+<form name="person" ng-submit="submit()">
+	<table>
+		<tr>
+			<td colspan="3">Add a new contact.</td>
+		</tr>
+		<tr>
+			<td><label for="name">First Name</label></td>
+			<td><input type="text" name="name" ng-model="name" required /></td>
+			<td><span ng-show="person.name.$error.required"	class="ui-icon ui-icon-notice"></span></td>
+		</tr>
+		<tr>
+			<td><label for="street">Street Name</label></td>
+			<td><input type="text" name="street" ng-model="street" required /></td>
+			<td><span ng-show="person.street.$error.required" class="ui-icon ui-icon-notice"></span></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button type="submit">
+					Submit<span class="ui-icon ui-icon-circle-check" style="float: left;"></span>
+				</button>
+			</td>
+		</tr>
+	</table>
+</form>
