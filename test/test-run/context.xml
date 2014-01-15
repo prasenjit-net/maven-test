@@ -1,5 +1,5 @@
 <Context>
 	<Resource name="jdbc/mkddb" auth="Container" type="javax.sql.DataSource"
 		maxActive="10" maxIdle="5" maxWait="10000" driverClassName="org.postgresql.Driver"
-		username="woky" password="XYZ" url="jdbc:postgresql://[::1]:5433/mkddb" />
+		username="woky" password="XYZ" url="jdbc:postgresql://[::1]:5433/mkddb1" />
 </Context>
